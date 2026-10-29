@@ -1,0 +1,21 @@
+name: Detect It Easy Scan
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup CDiE
+        uses: bjnfne/gh-actions/die@main
+
+      # 2. Der Nutzer scannt seine Dateien
+      - name: Führe Scans durch
+        run: |          
+          cdie -j ./Loader7.exe
