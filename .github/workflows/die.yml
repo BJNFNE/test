@@ -18,4 +18,4 @@ jobs:
       # 2. Der Nutzer scannt seine Dateien
       - name: Führe Scans durch
         run: |          
-          cdie -j ./Loader7.exe
+          cdie ./Loader7.exe
