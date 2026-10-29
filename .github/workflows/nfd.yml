@@ -7,7 +7,7 @@ on:
 
 jobs:
   analyze:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -17,4 +17,4 @@ jobs:
 
       - name: Check executable
         run: |          
-          nfdc ./Loader7.exe
+          nfdc.exe ./Loader7.exe
