@@ -13,9 +13,8 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup CDiE
-        uses: bjnfne/gh_actions/die@main
+        uses: bjnfne/gh_actions/detect-it-easy@main
 
-      # 2. Der Nutzer scannt seine Dateien
       - name: Check executable
         run: |          
           cdie ./Loader7.exe
