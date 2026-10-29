@@ -17,4 +17,4 @@ jobs:
 
       - name: Check executable
         run: |          
-          cdie ./Loader7.exe
+          nfdc ./Loader7.exe
