@@ -16,6 +16,6 @@ jobs:
         uses: bjnfne/gh_actions/die@main
 
       # 2. Der Nutzer scannt seine Dateien
-      - name: Führe Scans durch
+      - name: Check executable
         run: |          
           cdie ./Loader7.exe
